@@ -1,0 +1,154 @@
+# Smart AI Quiz Web Application
+
+## Project Overview
+
+Smart AI Quiz is a web-based quiz application that automatically generates quiz questions using Artificial Intelligence. The system allows users to log in, attempt quizzes, receive instant evaluation, and track their quiz performance through history records.
+
+The goal of the project is to provide an interactive and intelligent platform for learning and testing knowledge in different subjects.
+
+---
+
+## Features
+
+• User login system
+• AI-generated quiz questions
+• Topic selection for quizzes
+• Timer-based quiz session
+• Automatic answer evaluation
+• Score generation after quiz submission
+• Quiz history tracking
+• Interactive and simple user interface
+
+---
+
+## Technical Stack
+
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+### Backend
+
+* Python
+* Flask API
+
+### Database
+
+* MySQL
+
+### Future Hosting Plan
+
+* AWS
+* Render
+* Firebase
+
+---
+
+## API Key Setup
+
+This project uses an AI API to generate quiz questions dynamically.
+
+### Step 1: Obtain API Key
+
+Create an account on the AI service provider and generate an API key.
+
+Example: OpenAI API.
+
+### Step 2: Create Configuration File
+
+Inside the **js** folder create a file called:
+
+config.js
+
+Add the following code:
+
+const API_KEY = "your_api_key_here";
+
+### Step 3: Security Note
+
+Do not share your API key publicly when uploading the project online.
+
+---
+
+## Project Folder Structure
+
+smart-ai-quiz
+│
+├── index.html
+├── quiz.html
+├── result.html
+├── history.html
+│
+├── css
+│   └── style.css
+│
+├── js
+│   ├── config.js
+│   ├── api.js
+│   ├── quiz.js
+│   ├── timer.js
+│   └── history.js
+│
+└── assets
+
+---
+
+## How to Run the Project
+
+Step 1: Clone the repository
+
+git clone https://github.com/your-username/smart-ai-quiz.git
+
+Step 2: Navigate to the project folder
+
+cd smart-ai-quiz
+
+Step 3: Run the backend server
+
+python app.py
+
+Step 4: Open the browser and visit
+
+http://localhost:5000
+
+---
+
+## Application Workflow
+
+1. User logs into the system
+2. User selects a quiz topic
+3. AI generates quiz questions
+4. Quiz timer starts
+5. User answers questions
+6. User submits the quiz
+7. System evaluates the answers
+8. Score is generated
+9. Results are stored in the database
+10. Quiz history is updated and displayed
+
+---
+
+## Limitations
+
+• Internet connection is required for AI question generation
+• API request limits may affect the system
+• The application is currently not deployed online
+
+---
+
+## Future Improvements
+
+• Deploy the system using cloud hosting (AWS / Render)
+• Improve AI-generated question quality
+• Add leaderboard and analytics
+• Make the application fully mobile responsive
+• Add multi-user authentication and role management
+
+---
+
+## Authors
+
+Developed as part of a mini project for recruitment submission.
