@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SmartQuiz AI</title>
+
+<link rel="stylesheet" href="css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<div>🤖 SmartQuiz AI</div>
+<div>
+<a href="history.html">History</a>
+<a href="dashboard.html">Analytics</a>
+</div>
+</nav>
+
+<div class="container">
+
+<h1>Create AI Quiz</h1>
+
+<label>Topic</label>
+<input id="topic" placeholder="Example: Java Programming">
+
+<label>Number of Questions</label>
+<input id="count" type="number" value="5">
+
+<label>Difficulty</label>
+<select id="difficulty">
+<option>Easy</option>
+<option>Medium</option>
+<option>Hard</option>
+</select>
+
+<label>Time Limit (minutes)</label>
+<input id="time" type="number" value="5">
+
+<button onclick="startQuiz()">Generate Quiz</button>
+
+</div>
+
+<script src="js/config.js"></script>
+
+</body>
+
+</html>

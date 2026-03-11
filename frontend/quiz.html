@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz</title>
+
+<link rel="stylesheet" href="css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body onload="initQuiz()">
+
+<nav class="navbar">
+
+<div>🤖 SmartQuiz AI</div>
+
+<div id="timer">Time: 0</div>
+
+</nav>
+
+<div class="container">
+
+<h2 id="question">Loading question...</h2>
+
+<div id="options"></div>
+
+<br>
+
+<button onclick="startVoiceInput()">🎤 Voice Answer</button>
+
+<p id="voiceAnswer"></p>
+
+<br>
+
+<button onclick="nextQuestion()">Next Question</button>
+
+<br><br>
+
+<button onclick="exportQuizPDF(questions,[],false)">Download Quiz PDF</button>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/pdf.js"></script>
+
+</body>
+
+</html>

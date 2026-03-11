@@ -1,0 +1,13 @@
+CREATE DATABASE quizapp;
+
+USE quizapp;
+
+CREATE TABLE quiz_attempts(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+topic VARCHAR(255),
+score INT,
+total INT,
+date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);

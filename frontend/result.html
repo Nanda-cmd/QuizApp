@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz Result</title>
+
+<link rel="stylesheet" href="css/main.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body onload="loadResult()">
+
+<nav class="navbar">
+
+<div>Quiz Result</div>
+
+<a href="index.html">Home</a>
+
+</nav>
+
+<div class="container">
+
+<h1>Your Result</h1>
+
+<h2 id="score"></h2>
+
+<p id="accuracy"></p>
+
+<h3>AI Study Suggestions</h3>
+
+<p id="insights">Generating suggestions...</p>
+
+</div>
+
+<script src="js/insights.js"></script>
+
+<script>
+
+function loadResult(){
+
+const score = Number(localStorage.getItem("lastScore"))
+const total = Number(localStorage.getItem("lastTotal"))
+const topic = localStorage.getItem("lastTopic")
+
+let accuracy = 0
+
+if(total>0){
+accuracy = Math.round((score/total)*100)
+}
+
+document.getElementById("score").innerText =
+"Score: "+score+"/"+total
+
+document.getElementById("accuracy").innerText =
+"Accuracy: "+accuracy+"%"
+
+generateInsights(topic,score,total)
+
+}
+
+</script>
+
+</body>
+
+</html>
